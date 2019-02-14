@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, nullable) EXDirectEventBlock onSurfaceCreate;
 @property (nonatomic, copy, nullable) EXDirectEventBlock onFrame;
-@property (nonatomic, copy, nullable) NSNumber preferredFramesPerSecond;
 
+@property (nonatomic, assign) NSNumber *preferredFramesPerSecond;
 @property (nonatomic, assign) NSNumber *msaaSamples;
 
 // "protected"
