@@ -67,9 +67,10 @@
 
     // Set up a draw loop
     _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(draw)];
-    if (_preferredFramesPerSecond) {
-      _displayLink.preferredFramesPerSecond = _preferredFramesPerSecond;
-    }
+    // if (_preferredFramesPerSecond) {
+    //   _displayLink.preferredFramesPerSecond = _preferredFramesPerSecond;
+    // }
+    _displayLink.preferredFramesPerSecond = 60;
     [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
   }
   return self;
